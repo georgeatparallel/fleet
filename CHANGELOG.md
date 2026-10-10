@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.131.1
+
+- **Tab completion no longer doubles what you typed.**
+  Typing `cd` and pressing Tab in a zsh pane could show `cdcd`, because a pane restored at launch started without a locale.
+  A pane now waits for your login shell environment, and gets a UTF-8 locale when none is set (#645).
+
 ## v2.131.0
 
 - **Fleet opens video and audio files.**
