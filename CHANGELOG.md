@@ -1,5 +1,19 @@
 # Changelog
 
+## v2.132.0
+
+- **Long links in a terminal open whole.**
+  A URL that a program such as Claude Code wrapped over several lines used to open cut off at the end of the first line.
+  Fleet now joins the lines back together, so Cmd/Ctrl+click on any part of the link opens the full address (#646).
+- **Links no longer open with a stray `.` or `,` on the end.**
+  Punctuation after a link and a closing bracket around it are left out, while the last characters of a token or a JWT are kept (#646).
+- **Open links with a plain click.**
+  Turn on Settings > General > Link Click to open a URL without holding Cmd/Ctrl.
+  File paths still need Cmd/Ctrl+click (#646).
+- **Links open on Linux when the browser is a snap.**
+  Ctrl+click did nothing with a snap-packaged browser such as Firefox on Ubuntu (#646).
+- **Ctrl+click on a link inside Claude Code opens it once** instead of twice (#646).
+
 ## v2.131.1
 
 - **Tab completion no longer doubles what you typed.**
