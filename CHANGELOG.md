@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.133.0
+
+- **Video backgrounds.**
+  The terminal background now takes video files (`.mp4`, `.webm`, `.m4v`, `.mov`) as well as images, under Settings > General > Terminal Background.
+  A video plays muted on a loop, and opacity, blur, edge fade and fit apply to it as they do to an image (#647).
+- **Slideshows can mix images and videos.**
+  A video loops until the slideshow interval is up, then fades to the next background.
+  Slideshow thumbnails show a still of each video with a play mark (#647).
+- **A video background pauses while the window is hidden or minimized**, and carries on from the same frame when you come back (#647).
+- **A video that cannot be played is not saved.**
+  Picking one shows a message suggesting an H.264 mp4 or a webm.
+  One that turns up in a slideshow folder, or whose file has gone missing, is skipped with a single message (#647).
+
 ## v2.132.0
 
 - **Long links in a terminal open whole.**
