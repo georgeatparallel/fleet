@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.133.1
+
+- **Typing no longer lags while Claude Code sessions run.**
+  The Sessions list read each active transcript again from the start on every write, which kept the main thread busy and made keystrokes slow, most of all on Linux.
+  Fleet now reads only the lines a transcript gained, so a long session costs no more to follow than a short one (#649).
+
 ## v2.133.0
 
 - **Video backgrounds.**
