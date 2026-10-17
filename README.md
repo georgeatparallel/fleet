@@ -95,6 +95,9 @@ It can run shell commands, edit files, search code, fetch web pages, and generat
 
 **Scratch chat** (`Cmd+Shift+J`) opens a quick agent chat in its own folder.
 
+For optional web search and page fetching without a Parallel API key, see the
+[Parallel Search MCP setup guide](docs/parallel-search-mcp.md).
+
 ### Copilot (macOS)
 
 A floating overlay panel that monitors active Claude Code sessions across all your panes.
